@@ -62,6 +62,60 @@
         </div>
       </div>
     </div>
+  <div class="Adjustment">
+    <div>
+      <p>Light Adjustment</p>
+      <label for="light1">Turn off Light 1</label> 
+      <input type="checkbox" id="light1"><br>
+      <label for="light1rgb">Choose Light 1 Color</label> 
+      <input type="color" id="light1rgb" value="#E6E6E6"><br>
+      <label for="light2">Turn off Light 2</label>
+      <input type="checkbox" id="light2"><br>
+      <label for="light2rgb">Choose Light 2 Color</label> 
+      <input type="color" id="light2rgb" value="#3366FF"><br>
+    </div>
+    <div>
+      <p>Change Individual Element Swing</p>
+      <label for="sphere">Sphere</label> 
+      <input type="range" id="sphere" min="0" max="60" value="3"><br>
+      <label for="conel">Left Cone</label> 
+      <input type="range" id="conel" min="0" max="60" value="14"><br>
+      <label for="cubel">Left Cube</label> 
+      <input type="range" id="cubel" min="0" max="60" value="8"><br>
+      <label for="cylinderl">Left Cylinder</label> 
+      <input type="range" id="cylinderl" min="0" max="60" value="5"><br>
+      <label for="coner">Right Cone</label> 
+      <input type="range" id="coner" min="0" max="60" value="14"><br>
+      <label for="cuber">Right Cube</label> 
+      <input type="range" id="cuber" min="0" max="60" value="8"><br>
+      <label for="cylinderr">Right Cylinder</label> 
+      <input type="range" id="cylinderr" min="0" max="60" value="5"><br>
+    </div>
+    <br>
+    <label for="reset">Reset Changes</label> 
+    <button id="reset" onclick="ResetChanges()">Reset Changes</button>
+  </div>
+  <div class="Adjustment2">
+    <div>
+      <p>Material Adjustment for Sphere Head</p>
+      <label for="sphere_ka">Choose Sphere Ambient Color</label> 
+      <input type="color" id="sphere_ka" value="#4D4D4D"><br>
+      <label for="sphere_kd">Choose Sphere Diffuse Color</label> 
+      <input type="color" id="sphere_kd" value="#808080"><br>
+      <label for="sphere_ks">Choose Sphere Specular Color</label> 
+      <input type="color" id="sphere_ks" value="#666666"><br>
+      <label for="sphere_sc">Choose Sphere Material</label> 
+      <input type="range" id="sphere_sc" min="10" max="250" value="200" oninput="updateMaterial()"><br>
+    </div>
+    <div>
+      <p>Translate Elements</p>
+      <label for="sphere_x">X</label> 
+      <input type="range" id="sphere_x" min="-2" max="2" value="0" step="0.1"><br>
+      <label for="sphere_y">Y</label> 
+      <input type="range" id="sphere_y" min="-2" max="2" value="0" step="0.1"><br>
+      <label for="sphere_z">Z</label> 
+      <input type="range" id="sphere_z" min="-2" max="2" value="0" step="0.1">
+    </div>
   </div>
 
   <script src="transforms.js"></script>
