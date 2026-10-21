@@ -92,7 +92,7 @@ light1_cb.addEventListener("change", ()=>{
 });
 
 light2_cb.addEventListener("change", ()=>{
-  if(light1_cb.checked)
+  if(light2_cb.checked)
   {
     lightColor[1] = [0, 0, 0];
   }
